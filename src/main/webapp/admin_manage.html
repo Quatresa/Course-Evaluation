@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/admin_manage.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/change_admin_info.js"></script>
+<body>
+
+<div class="bg">
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人密码管理</dd> 
+<dd><a href="admin_manage.html">修改个人密码</a></dd> 
+</dl>
+ 
+ <dl class="dl2"> 
+<dd>老师信息管理</dd> 
+<dd><a href="look_teacher_info.html">老师信息查看</a></dd>
+<dd><a href="delete_teacher_info.html">老师信息删除</a></dd>  
+</dl>
+
+<dl class="dl4"> 
+<dd>学生信息管理</dd> 
+<dd><a href="look_student_info.html">学生信息查看</a></dd>
+<dd><a href="">学生信息删除</a></dd>  
+</dl>
+
+<dl class="dl5"> 
+<dd>课程信息管理</dd> 
+<dd><a href="admin_add_course.html">课程信息添加</a></dd>
+<dd><a href="admin_look_course.html">课程信息查看评估</a></dd>
+<dd><a href="admin_modify_course.html">课程信息修改</a></dd>
+<dd><a href="admin_delete_course.html">课程信息删除</a></dd>  
+</dl>
+
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd> 
+</dl>
+
+</div> 
+
+<div class="modifyPwd">
+<div>
+<p class="text1">原密码</p>
+<input class="input1" id="old_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+
+<div >
+<p class="text2">新密码</p>
+<input class="input2" id="new_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+
+<div >
+<p class="text3">确认新密码</p>
+<input class="input3" id="confirm_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+</div>
+
+<input class="bc" type="submit" id="save_info" value="保存">
+</div>
+
+</body>
+</html>
+
+

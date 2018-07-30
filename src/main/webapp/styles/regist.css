@@ -1,0 +1,7 @@
+body{ padding:0; margin:0;}
+img{ display:block;}
+.ta{ margin:0 auto;}
+.bg{ background-image:url(../img/1.jpg); background-repeat:no-repeat; width:900px; height:600px; margin:0 auto; padding-top:100px;}
+.warning{
+	display:none;
+}

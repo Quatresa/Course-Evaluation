@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/add_tea_info.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/add_tea_info.js"></script>
+<body>
+<div class="bg">
+
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人信息管理</dd> 
+<dd><a href="teacher_manage.html">修改个人密码</a></dd> 
+<dd><a href="add_tea_info.html">完善个人信息</a></dd>  
+</dl>
+ 
+ <dl class="dl2"> 
+<dd>课程评估</dd> 
+<dd><a href="tea_look_evaluate.html">查看学生评估</a></dd> 
+<dd><a href="tea_evaluate.html">课程达成度评估</a></dd> 
+<dd><a href="tea_prepare_lookeval.html">查看达成度评估</a></dd> 
+<dd><a href="tea_prelook_index.html">查看指标点统计</a></dd> 
+</dl>
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd>
+</dl>
+</div> 
+<table  class="ta"  border="1" bordercolor="#0099ff" cellpadding="5px" cellspacing="0">
+<tr><td class="col"><center>编号</center></td><td><input class="input1" id="teacherNo" type="text"></td></tr>
+<tr><td><center>姓名</center></td><td><input class="input2" id="teacherRealName" type="text"></td></tr>
+<tr><td><center>性别</center></td>
+<td>
+<input type="radio" name="sex" value="男" id="teacherSex1"/>男
+<input type="radio" name="sex" value="女" id="teacherSex2"/>女
+</td></tr>
+<tr><td><center>职称</center></td><td><input class="input3" id="teacherJob" type="text"></td></tr>
+<tr><td><center>联系方式</center></td><td><input class="input4" id="teacherTell" type="text"></td></tr>
+<tr><td><center>出生日期(YYYY-MM-DD)</center></td><td><input class="input5" id="teacherBirth" type="text"></td></tr>
+</table>
+<input class="bc" type="submit" id="save_info" value="保存">
+</div>
+</body>
+</html>
+
+

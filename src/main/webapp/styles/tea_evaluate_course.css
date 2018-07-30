@@ -1,0 +1,70 @@
+a{ text-decoration:none; color:black;}
+.bg{ 
+	width:900px;
+	height:1100px; 
+	background-image:url(../img/10.jpg); 
+	margin:0 auto;
+	padding-top:90px;
+	box-sizing:border-box;
+	
+}
+.nav{
+	width:156px;
+	float:left;
+	padding:0 9px;
+	text-align:center;
+	font-family:"宋体";
+	font-size:16px;
+	
+}
+.nav dl{
+	width:100%;
+	float:left;
+	margin:0;
+	margin-bottom:20px;
+}
+.nav dl dd:first-child{
+	line-height:35px;
+	height:35px;
+}
+.nav dd{
+	line-height:32px;
+	height:32px;
+}
+.right{
+	margin-left:23%;
+	padding-left:2%;
+	padding-top:3%;
+}
+.floor{
+	width:100%; 
+	text-align:center;
+	float:left;
+}
+.floor input{
+	float:left;
+}
+.floor textarea{
+	float:left;
+}
+.floor span{
+	float:left;
+	font-family:"宋体";
+	font-size:16px;
+	padding-top:15px;
+}
+.text0{
+	float:left;
+	font-family:"宋体";
+	font-size:16px;
+	padding-top:15px;
+	margin-top:10px;
+}
+.text1{ width:320px; height:50px;float:left;margin-top:10px;}
+.text2{ width:70px; height:50px;float:left;margin-top:10px;}
+.score{ float:left;
+	font-family:"宋体";
+	font-size:16px;
+	padding-top:30px; margin-left:450px;}
+.text3{  width:80px; height:30px;float:left;margin-top:20px; margin-left:10px;}
+.bc{  margin-left:520px; margin-top:20px; width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}

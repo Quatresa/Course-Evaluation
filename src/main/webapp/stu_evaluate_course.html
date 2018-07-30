@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/stu_evaluate_course.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/jBootstrapPage.js"></script>
+<script type="text/javascript" src="scripts/stu_evaluate_course.js"></script>
+<body>
+<div class="bg">
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人密码管理</dd> 
+<dd><a href="student_manage.html">修改个人密码</a></dd> 
+<dd><a href="add_stu_info.html">完善个人信息</a></dd> 
+</dl>
+ <dl class="dl2"> 
+<dd>课程评估</dd> 
+<dd><a href="">课程评价</a></dd> 
+<dd><a href="stu_look_evaluate.html">查看评价</a></dd>
+<dd><a href=""></a></dd>  
+<dd><a href=""></a></dd> 
+</dl>
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd>
+</dl>
+</div> 
+
+<table  class="ta"  border="1" bordercolor="#0099ff" cellpadding="5px" cellspacing="0">
+<thead>
+<tr>
+
+<td class="input1"><p><center>课程号</center></p></td>
+<td class="input3" ><p><center>课程名</center></p></td>
+<td class="input4"><p><center>课程性质</center></p></td>
+<td class="input1"><p><center>学时</center></p></td>
+<td class="input1"><p><center>学分</center></p></td>
+<td class="input2"></td>
+
+</tr>
+</thead>
+<tbody id="course_info">
+<tr>
+<div id="info-list">
+<td><input class="input1" type="text" value="" id="courseNo"></td>
+<td><input class="input3" type="text" value="" id="courseName"></td>
+<td><input class="input4" type="text" value="" id="courseProperties"></td>
+<td><input class="input1" type="text" value="" id="courseHour"></td>
+<td><input class="input1" type="text" value="" id="courseScore"></td>
+</div>
+<td><input class="input2" type="button" value="评估"></td>
+</tr>
+</tbody>
+</table>
+<ul class="pagination" id="course_info_page">
+</ul>
+</div>
+</body>
+</html>
+

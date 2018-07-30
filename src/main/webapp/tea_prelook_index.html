@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/tea_prelook_index.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/jBootstrapPage.js"></script>
+<script type="text/javascript" src="scripts/tea_prelook_index.js"></script>
+<body>
+<div class="bg">
+
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人信息管理</dd> 
+<dd><a href="teacher_manage.html">修改个人密码</a></dd> 
+<dd><a href="add_tea_info.html">完善个人信息</a></dd>  
+</dl>
+ 
+ <dl class="dl2"> 
+<dd>课程评估</dd> 
+<dd><a href="tea_look_evaluate.html">查看学生评估</a></dd> 
+<dd><a href="tea_evaluate.html">课程达成度评估</a></dd> 
+<dd><a href="tea_prepare_lookeval.html">查看达成度评估</a></dd> 
+<dd><a href="">查看指标点统计</a></dd> 
+</dl>
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd>
+</dl>
+</div> 
+<table  class="ta"  border="1" bordercolor="#0099ff" cellpadding="5px" cellspacing="0">
+<thead>
+<tr>
+<td class="input5"><p><center>标号</center></p></td>
+<td class="input1"><p><center>指标点</center></p></td>
+<td class="input3" ><p><center></center></p></td>
+<!-- <td class="input1"><p><center>平均分</center></p></td>
+<td class="input2"></td> -->
+
+</tr>
+</thead>
+<tbody id="index_info">
+<tr>
+<div id="info-list">
+<td><input class="input1" type="text" value="" id="courseNo"></td>
+<td><input class="input3" type="text" value="" id="courseName"></td>
+<td><input class="input1" type="text" value="" id="courseHour"></td>
+<td><input class="input1" type="text" value="" id="courseScore"></td>
+</div>
+<td><input class="input2" type="button" value="评估"></td>
+</tr>
+</tbody>
+</table>
+<ul class="pagination" id="index_info_page">
+</ul>
+</div>
+</body>
+</html>

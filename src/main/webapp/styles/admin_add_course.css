@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black; }
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/11.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:12px; padding-left:13px;}
+.dl3{ padding-top:18px; padding-left:13px;}
+.dl4{ padding-top:22px; padding-left:13px;}
+.dl5{ padding-top:22px; padding-left:10px;}
+.dl5 dd{ line-height:32px;}
+.dl4 dd{ line-height:32px;}
+
+
+.bc{ margin-left:380px; margin-top:40px; width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}
+.ta{ width:400px; margin:0 auto; margin-top:120px; margin-left:210px; float:left;}
+.ta .col{ margin:0 auto;}

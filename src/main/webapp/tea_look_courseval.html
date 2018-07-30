@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/common.css"/>
+<link rel="stylesheet" href="styles/tea_evaluate_course.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/tea_look_courseval.js"></script>
+<body>
+<div class="bg">
+
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人信息管理</dd> 
+<dd><a href="teacher_manage.html">修改个人密码</a></dd> 
+<dd><a href="add_tea_info.html">完善个人信息</a></dd>  
+</dl>
+ 
+ <dl class="dl2"> 
+<dd>课程评估</dd> 
+<dd><a href="tea_look_evaluate.html">查看学生评估</a></dd> 
+<dd><a href="tea_evaluate.html">课程达成度评估</a></dd> 
+<dd><a href="tea_prepare_lookeval.html">查看达成度评估</a></dd> 
+<dd><a href="tea_prelook_index.html">查看指标点统计</a></dd> 
+</dl>
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd>
+</dl>
+</div> 
+<div class="right clearfix" id="content">
+		<div class="floor clearfix" id="index_list">
+		    <span >指标点：</span>
+			<textarea class="text1" id="" value=""></textarea>
+			<span >权重：</span>
+			<input class="text2" type="text"  value="" >
+			<span >分数：</span>
+			<input class="text2" type="text"  value="" >
+		</div>
+
+	</div>
+<span class="score" >总分：</span>
+<input class="text3" type="text"  id="total" value="" >
+<input class="bc" type="submit" id="save_info" value="保存">
+</div>
+</body>
+</html>

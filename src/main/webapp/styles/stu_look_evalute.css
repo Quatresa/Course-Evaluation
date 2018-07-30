@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black; }
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/8.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;}
+.dl1 dd{ margin-top:10px; line-height:22px;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:25px; padding-left:25px;}
+.dl3{ padding-top:52px; padding-left:13px;}
+
+.text1{ margin-left:450px; margin-top:30px;  float:left;}
+.score{  width:70px; height:25px; float:left;margin-top:25px; align:center;}
+.content{ padding-top:100px; margin-left:250px;}
+.select1{ margin-top:18px;}
+.select2{ margin-left:20px;}
+.question{ margin-top:20px;}
+.size{ margin-top:20px; width:500px; height:60px;}

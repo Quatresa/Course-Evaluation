@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+body{ padding:0; margin:0;}
+ 
+.text{ padding:0; margin:0;}
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}*/
+/*.dd{ line-height:36px;}
+.nav{ float:left;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:12px; padding-left:13px;}
+.dl3{ padding-top:18px; padding-left:13px;}
+.dl4{ padding-top:22px; padding-left:13px;}
+.dl5{ padding-top:22px; padding-left:10px;}
+.dl5 dd{ line-height:32px;}
+.dl4 dd{ line-height:32px;}
+
+
+.text1{ float:left;  width:400px; height:60px;padding:0;margin-top:-500px; margin-left:280px; }
+.qz{  margin-top:-500px; margin-left:280px;}
+.text2{ float:left; width:80px; height:60px; margin-top:-500px; margin-left:280px;}
+
+*/
+
+a{ text-decoration:none; color:black;}
+.bg{ 
+	width:900px;
+	height:1100px; 
+	background-image:url(../img/11.jpg); 
+	margin:0 auto;
+	padding-top:85px;
+	box-sizing:border-box;
+}
+.nav{
+	width:178px;
+	float:left;
+	padding:0 9px;
+	text-align:center;
+	font-family:"宋体";
+	font-size:16px;
+}
+.nav dl{
+	width:100%;
+	float:left;
+	margin:0;
+	margin-bottom:17px;
+}
+.nav dl dd:first-child{
+	line-height:35px;
+	height:35px;
+}
+.nav dd{
+	line-height:32px;
+	height:32px;
+}
+.right{
+	margin-left:230px;
+	padding-left:14px;
+	padding-top:40px;
+}
+.floor{
+	width:100%; 
+	text-align:center;
+	float:left;
+}
+.floor input{
+	float:left;
+}
+.floor textarea{
+	float:left;
+}
+.floor span{
+	float:left;
+	font-family:"宋体";
+	font-size:16px;
+	padding-top:15px;
+}
+.text0{
+	float:left;
+	font-family:"宋体";
+	font-size:16px;
+	padding-top:15px;
+	margin-top:15px;
+}
+.text1{ width:300px; height:50px;float:left;margin-top:10px;}
+.text2{ width:80px; height:50px;float:left;margin-top:10px;}
+.bc{ float:left;margin-left:30px;width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}
+.inc{float:left; margin-left:450px; width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}
+.del{ width:40px; height:30px;float:left;margin-top:20px;margin-left:30px; margin-right:30px;}

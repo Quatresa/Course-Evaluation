@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/look_info.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/look_student_info.js"></script>
+<body>
+
+<div class="bg">
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人密码管理</dd> 
+<dd><a href="admin_manage.html">修改个人密码</a></dd> 
+</dl>
+ 
+ <dl class="dl2"> 
+<dd>老师信息管理</dd> 
+<dd><a href="look_teacher_info.html">老师信息查看</a></dd>
+<dd><a href="delete_teacher_info.html">老师信息删除</a></dd>  
+</dl>
+
+<dl class="dl4"> 
+<dd>学生信息管理</dd> 
+<dd><a href="">学生信息查看</a></dd>
+<dd><a href="delete_student_info.html">学生信息删除</a></dd>  
+</dl>
+
+<dl class="dl5"> 
+<dd>课程信息管理</dd> 
+<dd><a href="admin_add_course.html">课程信息添加</a></dd>
+<dd><a href="admin_look_course.html">课程信息查看评估</a></dd>
+<dd><a href="admin_modify_course.html">课程信息修改</a></dd>
+<dd><a href="admin_delete_course.html">课程信息删除</a></dd>  
+</dl>
+
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd> 
+</dl>
+
+</div> 
+
+
+<table  class="ta"  border="1" bordercolor="#0099ff" cellpadding="5px" cellspacing="0">
+<thead>
+<tr>
+
+<td><p><center>姓名</center></p></td>
+<td><p><center>学号</center></p></td>
+<td><p><center>性别</center></p></td>
+<td><p><center>专业</center></p></td>
+<td><p><center>出生日期</center></p></td>
+<td><p><center>联系方式</center></p></td>
+
+</tr>
+</thead>
+<tbody id="student_info">
+<tr>
+<div id="info-list">
+<td><input class="input1" type="text" id="studentNo"></td>
+<td><input class="input4" type="text" id="studentRealName"></td>
+<td><input class="input1" type="text" id="studentSex"></td>
+<td><input class="input1" type="text" id="studentMajor"></td>
+<td><input class="input2" type="text" id="studentBirth"></td>
+<td><input class="input2" type="text"  id="studentTell"></td>
+</div>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
+
+
+
+
+

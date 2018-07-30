@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/student_manage.css"/>
+<title>课程评估系统</title>
+</head>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/cookie_util.js"></script>
+<script type="text/javascript" src="scripts/change_student_pwd.js"></script>
+<body>
+<div class="bg">
+<div class="nav"> 
+<dl class="dl1"> 
+<dd>个人信息管理</dd> 
+<dd><a href="">修改个人密码</a></dd> 
+<dd><a href="add_stu_info.html" id="addInfo">完善个人信息</a></dd> 
+</dl>
+ <dl class="dl2"> 
+<dd>课程评估</dd> 
+<dd><a href="stu_evaluate_course.html">课程评价</a></dd> 
+<dd><a href="stu_look_evaluate.html">查看评价</a></dd>
+<dd><a href=""></a></dd>  
+<dd><a href=""></a></dd> 
+</dl>
+<dl class="dl3"> 
+<dd>系统退出管理</dd> 
+<dd><a href="login.html">安全退出系统</a></dd>
+</dl>
+</div> 
+<div class="modifyPwd">
+<div>
+<p class="text1">原密码</p>
+<input class="input1" id="old_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+
+<div >
+<p class="text2">新密码</p>
+<input class="input2" id="new_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+
+<div >
+<p class="text3">确认新密码</p>
+<input class="input3" id="confirm_pwd" type="password">
+<div class="clearfix"></div>
+</div>
+</div>
+<input class="bc" type="submit" id="save_info" value="保存">
+</div>
+</body>
+</html>

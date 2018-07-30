@@ -1,0 +1,32 @@
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black; }
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/11.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;
+      font-family:"ËÎÌו";
+	  font-size:16px;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:12px; padding-left:13px;}
+.dl3{ padding-top:18px; padding-left:13px;}
+.dl4{ padding-top:22px; padding-left:13px;}
+.dl5{ padding-top:22px; padding-left:10px;}
+.dl5 dd{ line-height:32px;}
+.dl4 dd{ line-height:32px;}
+.content{ padding-top:13%; margin-left:27%;}
+.question{ 
+	margin-top:20px;
+	float:left;
+	width:90%;
+}
+.question textarea{
+	width:80%;
+	float:left;
+}
+.text{ margin-top:5px; float:left;}
+.size{ margin-top:20px; width:500px; height:40px;}
+.bc{ margin-left:350px; margin-top:40px; width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}

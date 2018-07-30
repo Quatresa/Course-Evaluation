@@ -1,0 +1,30 @@
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black; }
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/11.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:48%; padding-left:13px;}
+.dl2{ padding-top:12px; padding-left:13px;}
+.dl3{ padding-top:18px; padding-left:13px;}
+.dl4{ padding-top:22px; padding-left:13px;}
+.dl5{ padding-top:22px; padding-left:10px;}
+.dl5 dd{ line-height:32px;}
+.dl4 dd{ line-height:32px;}
+.modifyPwd{padding-top:15%; padding-left:23%;float:left;}
+.text1{ float:left;width:100px;}
+.input1{ width:180px; height:20px; float:left; }
+.text2{ padding-top:5%;float:left;width:100px;}
+.input2{ width:180px; height:20px; float:left;margin-top:5%; }
+.text3{ padding-top:5%; float:left;width:100px;}
+.input3{ margin-top:5%; width:180px; height:20px; float:left;}
+.content{ padding-top:100px; margin-left:250px;}
+.select1{ margin-top:18px;}
+.select2{ margin-left:20px;}
+.question{ margin-top:20px;}
+.size{ margin-top:20px; width:500px; height:40px;}
+.bc{ margin-left:33%; margin-top:5%;  width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}

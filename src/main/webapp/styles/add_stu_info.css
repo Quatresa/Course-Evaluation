@@ -1,0 +1,17 @@
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black;}
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/8.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;}
+.dl1 dd{ margin-top:10px; line-height:22px;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:25px; padding-left:25px;}
+.dl3{ padding-top:52px; padding-left:13px;}
+.bc{ margin-left:380px; margin-top:40px; width:50px; height:25px; background-color:#74D4F7; border-color:#098AE8;}
+.ta{ width:400px; margin:0 auto; margin-top:120px; margin-left:210px; float:left;}
+.ta .col{ margin:0 auto;}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.just.course.dao.StudentEvalCourseDao">
+   <!-- User findEvaluateInfoById(String id) -->
+  <select id="findEvaluateInfoById" parameterType="string" resultType="cn.just.course.entity.StudentEvaluate">
+    select student_eval_id as studentEvalId,
+           course_no as courseNo,
+           options as options,
+           option_value as optionValue,
+           course_suggest as suggestions
+    from student_eval_table
+    where course_no=#{courseNo}
+    order by student_eval_id
+    </select>
+    <update id="updateEvalInfo"
+		parameterType="map">
+		update 
+			student_eval_table
+		set
+			<trim suffixOverrides=",">
+				<if test="options != null">
+					options=#{options}
+				</if>
+			</trim>
+		where
+			course_no=#{courseNo} and student_eval_id=#{studentEvalId}
+	</update>  
+	<update id="updateEvalResultInfo"
+		parameterType="map">
+		update 
+			student_eval_table
+		set
+			<trim suffixOverrides=",">
+				<if test="optionValue != null">
+					option_value=#{optionValue},
+				</if>
+				<if test="suggestions != null">
+					course_suggest=#{suggestions}
+				</if>
+			</trim>
+		where
+			course_no=#{courseNo} and student_eval_id=#{studentEvalId}
+	</update>  
+</mapper>

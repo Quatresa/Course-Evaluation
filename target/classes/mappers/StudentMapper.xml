@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.just.course.dao.StudentDao">
+  <insert id="saveStudent" parameterType="cn.just.course.entity.Student">
+   insert into student_role
+   (student_id,
+   student_name,
+   student_pwd)
+   values
+   (#{studentId},#{studentName},#{studentPassword})
+  </insert>
+  
+   <!-- User findStudentById(String id) -->
+  <select id="findStudentById" parameterType="string" resultType="cn.just.course.entity.Student">
+    select student_id as studentId,
+           student_name as studentName,
+           student_pwd as studentPassword,
+           student_no as studentNo,
+           student_real_name as studentRealName,
+           student_sex as studentSex,
+           student_tell as studentTell,
+           student_birth as studentBirth,
+           student_major as studentMajor
+    from student_role
+    where student_id=#{studentId}
+  </select>
+  
+  <select id="findStudentByName" parameterType="string" resultType="cn.just.course.entity.Student">
+    select student_id as studentId,
+           student_name as studentName,
+           student_pwd as studentPassword
+    from student_role
+    where student_name=#{studentName}
+  </select>
+  
+  <!-- User lookStudentInfo() -->
+  <select id="lookStudentInfo" resultType="cn.just.course.entity.Student">
+    select student_id as studentId,
+           student_name as studentName,
+           student_pwd as studentPassword,
+           student_no as studentNo,
+           student_real_name as studentRealName,
+           student_sex as studentSex,
+           student_tell as studentTell,
+           student_birth as studentBirth,
+           student_major as studentMajor
+    from student_role
+    order by student_no
+  </select>
+  
+  <update id="updateStudent"
+		parameterType="map">
+		update 
+			student_role
+		set
+			<trim suffixOverrides=",">
+				<if test="studentNo != null">
+					student_no=#{studentNo},
+				</if>
+				<if test="studentRealName != null">
+					student_real_name=#{studentRealName},
+				</if>
+				<if test="studentSex != null">
+					student_sex=#{studentSex},
+				</if>
+				<if test="studentTell != null">
+					student_tell=#{studentTell},
+				</if>
+				<if test="studentBirth != null">
+					student_birth=#{studentBirth},
+				</if>
+				<if test="studentMajor != null">
+					student_major=#{studentMajor}
+				</if>
+			</trim>
+		where
+			student_id=#{studentId}
+	</update>  
+	
+	<update id="updateStudentPwd"
+		parameterType="map">
+		update 
+			student_role
+		set
+			<trim suffixOverrides=",">
+				<if test="studentPassword != null">
+					student_pwd=#{studentPassword}
+				</if>
+			</trim>
+		where
+			student_id=#{studentId}
+	</update>
+	
+	<delete id="deleteStudentInfo"
+		parameterType="list">
+		delete from student_role
+		<where>
+            student_no IN
+            <foreach item="item" collection="list" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </where>	
+	</delete>
+</mapper>

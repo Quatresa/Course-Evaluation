@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.just.course.dao.TeacherEvalCourseDao">
+  <insert id="saveIndexInfo" parameterType="string">
+   insert into index_table
+   (index_no)
+   values
+   (#{indexNo})
+  </insert>
+  <insert id="saveIndexInfoNo" parameterType="cn.just.course.entity.TeacherEvaluate">
+   insert into course_index_table
+   (index_id,course_no)
+   values
+   (#{indexId},#{courseNo})
+  </insert>
+  <select id="findIndexInfo"  resultType="cn.just.course.entity.TeacherEvaluate">
+    select index_id as indexId,index_no as indexNo from index_table
+  </select>
+  <select id="findIndexInfoByNo"  parameterType="string" resultType="cn.just.course.entity.TeacherEvaluate">
+    select index_id as indexId,index_no as indexNo from index_table
+    where index_no=#{indexNo}
+  </select>
+  <select id="findEvaluateInfoById" parameterType="string" resultType="cn.just.course.entity.TeacherEvaluate">
+    select c.course_no as courseNo,index_no as indexNo,weight,c.index_id as indexId,score
+    from course_index_table c,index_table i
+    where c.index_id=i.index_id and c.course_no=#{courseNo}
+  </select>
+  <select id="findEvalInfoById" parameterType="int" resultType="cn.just.course.entity.TeacherEvaluate">
+    select c.course_no as courseNo,c1.course_name as courseName,index_no as indexNo,weight,c.index_id as indexId,score
+    from course_index_table c,index_table i,course_table c1
+    where c.index_id=i.index_id and c.course_no=c1.course_no and c.index_id=#{indexId}
+    order by c.index_id
+  </select>
+  <select id="countIndexId"  resultType="int">
+    select count(*) from index_table
+  </select>
+  <update id="updateEvaluateInfo"
+		parameterType="map">
+		update 
+			course_index_table c,index_table i
+		set
+			<trim suffixOverrides=",">
+			    <if test="indexNo != null">
+					index_no=#{indexNo},
+				</if>
+				<if test="weight != null">
+					weight=#{weight}
+				</if>
+			</trim>
+		where
+			c.index_id=i.index_id and c.course_no=#{courseNo} and c.index_id=#{indexId}
+	</update>  
+	<update id="updateEvalResult"
+		parameterType="map">
+		update 
+			course_index_table c,index_table i
+		set
+			<trim suffixOverrides=",">
+				<if test="score != null">
+					score=#{score}
+				</if>
+			</trim>
+		where
+			c.index_id=i.index_id and c.course_no=#{courseNo} and c.index_id=#{indexId}
+	</update> 
+	<delete id="deleteIndexNoInfo" parameterType="string">
+		delete from course_index_table
+		<where>
+           index_id=#{0} and course_no=#{1} 
+        </where>	 	
+	</delete> 
+</mapper>

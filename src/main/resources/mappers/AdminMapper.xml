@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.just.course.dao.AdminDao">
+  <insert id="saveAdmin" parameterType="cn.just.course.entity.Admin">
+   insert into admin_role
+   (admin_id,
+   admin_name,
+   admin_pwd)
+   values
+   (#{adminId},#{adminName},#{adminPassword})
+  </insert>
+  
+   <!-- User findAdminById(String id) -->
+  <select id="findAdminById" parameterType="string" resultType="cn.just.course.entity.Admin">
+    select admin_id as adminId,
+           admin_name as adminName,
+           admin_pwd as adminPassword
+    from admin_role
+    where admin_id=#{adminId}
+  </select>
+  
+  <select id="findAdminByName" parameterType="string" resultType="cn.just.course.entity.Admin">
+    select admin_id as adminId,
+           admin_name as adminName,
+           admin_pwd as adminPassword
+    from admin_role
+    where admin_name=#{adminName}
+  </select>
+  
+  <update id="updateAdmin"
+		parameterType="map">
+		update 
+			admin_role
+		set
+			<trim suffixOverrides=",">
+				<if test="adminPassword != null">
+					admin_pwd=#{adminPassword}
+				</if>
+			</trim>
+		where
+			admin_id=#{adminId}
+	</update>  
+</mapper>

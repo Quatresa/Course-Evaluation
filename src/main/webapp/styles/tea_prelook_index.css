@@ -1,0 +1,33 @@
+body{ padding:0; margin:0;}
+a{ text-decoration:none; color:black; }
+ul{ list-style-type:none;}
+img{ display:block;}
+p{ padding:0; margin:0;}
+dl{ margin:0; padding:0;}
+.clearfix{ clear:both;}
+.bg{ width:900px; height:1100px; background-image:url(../img/10.jpg); margin:0 auto;}
+dd{ line-height:36px;}
+.nav{ float:left;}
+.dl1 dd{ line-height:22px; margin-top:10px;}
+.dl2 dd{ line-height:32px;}
+.dl1{ padding-top:88px; padding-left:13px;}
+.dl2{ padding-top:29px; padding-left:15px;}
+.dl3{ padding-top:22px; padding-left:13px;}
+
+.input1{ width:150px; height:25px; text-align:center; font-size:14px;}
+.input2{ width:70px; height:25px; text-align:center; font-size:14px;}
+.input3{ width:80px; height:25px; text-align:center;font-size:14px;}
+.input4{ width:80px; height:25px; text-align:center;font-size:14px;}
+.input5{ width:50px; height:25px; text-align:center;font-size:14px;}
+.ta{  width:600px;  margin-top:-350px; margin-left:250px; float:left;}
+
+.pagination > li > a,
+ .pagination > li > span {
+    color: #0000ff;
+} 
+.pagination > .active > span:focus {
+    background-color: #2db7f5;
+    border-color: #2db7f5;
+} 
+.pagination{ color:#2db7f5; padding-top:660px; margin-left:420px;}
+.pagination li{ float:left; color:#2db7f5; margin-right:10px;}
